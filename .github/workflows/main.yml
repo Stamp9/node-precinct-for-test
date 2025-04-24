@@ -43,3 +43,4 @@ jobs:
           gradual_report: false
           ignore_cache: ${{ github.event.inputs.ignore_cache }}
           fail_on_high_severity: false
+          comment_on_commit: true
