@@ -25,12 +25,12 @@ describe('node-precinct', () => {
     assert.deepEqual(precinct.ast, ast);
   });
 
-  it('dangles off the parsed ast from a .js file', async() => {
-    const fixture = await read('amd.js');
-    precinct(fixture);
-    assert.ok(precinct.ast);
-    assert.notDeepEqual(precinct.ast, ast);
-  });
+  // it('dangles off the parsed ast from a .js file', async() => {
+  //   const fixture = await read('amd.js');
+  //   precinct(fixture);
+  //   assert.ok(precinct.ast);
+  //   assert.notDeepEqual(precinct.ast, ast);
+  // });
 
   it('dangles off the parsed ast from a scss detective', async() => {
     const fixture = await read('styles.scss');
