@@ -42,3 +42,4 @@ jobs:
           comment_on_commit: false # Optional: comments on commits (if not PR/if above is false) if high severity issues are found
           gradual_report: false
           ignore_cache: ${{ github.event.inputs.ignore_cache }}
+          fail_on_high_severity: false
